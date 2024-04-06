@@ -1,0 +1,193 @@
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+
+  background-attachment: fixed;
+  background-size: cover;
+  background-image: url("ilmages/back-ground.jpg");
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+.container h3 {
+  display: flex;
+  justify-content: space-between;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #2a7a76;
+  color: white;
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.none {
+  display: none;
+}
+#menu {
+  position: fixed;
+  left: 5px;
+  transition: 0.2s;
+}
+#menu:hover {
+  scale: 1.2;
+}
+
+#cancel {
+  position: fixed;
+  top: 10px;
+  left: 5px;
+  transition: 0.2s;
+}
+#cancel:hover {
+  scale: 1.2;
+}
+
+#list {
+  height: 100%;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 40%;
+  background-color: #144b48;
+  transition: 0.4s;
+}
+
+#list a {
+  font-size: 20px;
+  border-bottom: solid #fff;
+  transition: 0.4s;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+#list a:hover {
+  background-color: #555;
+}
+.logo {
+  font-size: 1.5rem;
+  float: left;
+  margin-right: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.logo img {
+  margin-left: 20px;
+  margin-right: 20px;
+  height: 30px;
+}
+#intro {
+  margin-top: 50px;
+  width: 100%;
+  padding: 20px 0;
+  text-align: center;
+  margin-bottom: 20px;
+  background-color: #2a7a7646;
+  color: white;
+}
+
+#main {
+  padding-bottom: 100px;
+  margin-top: 50px;
+}
+.con {
+  font-size: medium;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+.conTest {
+  font-size: 24px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+.conPrix {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 25px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  color: white;
+}
+.accounts {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  grid-gap: 5px;
+}
+
+.account {
+  flex: 1 1 300px;
+  margin-top: 20px;
+  background-color: #505050bd;
+  color: white;
+  border: none;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: 0.4s;
+}
+.account:hover {
+  background-color: #07403d;
+}
+
+.account img {
+  width: 100%;
+  height: 200px;
+  border-radius: 5px;
+}
+
+.account p {
+  margin: 5px 0;
+}
+
+footer {
+  background-color: #2a7a76;
+  color: white;
+  padding: 0px 0;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  margin-top: 50px;
+}
+footer h2 {
+  display: flex;
+  align-items: center;
+}
+footer img {
+  margin-left: 10px;
+  height: 30px;
+  transition: 0.4s;
+}
+footer img:hover {
+  scale: 1.1;
+}
+
+.none {
+  display: none;
+}
+
+/*******************************************************************/
+
+@media only screen and (max-width: 600px) {
+  .accounts {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-gap: 5px;
+    padding: 0 30px;
+  }
+  .account {
+    margin-top: 5px;
+  }
+}
